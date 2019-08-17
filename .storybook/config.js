@@ -1,5 +1,6 @@
 import { configure, addParameters } from '@storybook/react';
 import { themes } from '@storybook/theming';
+import '../src/App.css';
 
 addParameters({
   options: {
@@ -7,8 +8,10 @@ addParameters({
   },
 });
 
+const req = require.context('../src', true, /\.stories.js$/);
+
 function loadStories() {
-  require('../src/stories');
+  req.keys().forEach(filename => req(filename));
 }
 
 configure(loadStories, module);
