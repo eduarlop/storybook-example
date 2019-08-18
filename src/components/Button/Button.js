@@ -12,7 +12,7 @@ function Button(props) {
 
   return (
     <button className={ `button ${className}` } onClick={onClick}>
-      { icon ? <i>icon</i> : null }
+      { icon ? <i className={ `buton__icon fas fa-${icon}` }></i> : null }
       {children}
     </button>
   );
