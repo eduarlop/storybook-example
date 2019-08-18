@@ -6,14 +6,15 @@ function Button(props) {
   const {
     children,
     className,
+    disabled,
     icon,
     onClick
   } = props
 
   return (
-    <button className={ `button ${className}` } onClick={onClick}>
+    <button className={ `button ${className}` } onClick={ onClick } disabled={ disabled }>
       { icon ? <i className={ `buton__icon fas fa-${icon}` }></i> : null }
-      {children}
+      { children }
     </button>
   );
 }
@@ -21,6 +22,7 @@ function Button(props) {
 Button.propTypes = {
   title: PropTypes.string,
   className: PropTypes.string,
+  disabled: PropTypes.bool,
   icon: PropTypes.string,
   onClick: PropTypes.func
 };

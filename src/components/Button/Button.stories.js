@@ -17,6 +17,11 @@ storiesOf('Button', module)
       Add to Cart
     </Button>
   ))
+  .add('default disabled', () => (
+    <Button icon="shopping-cart" onClick={action('clicked')} disabled>
+      Add to Cart
+    </Button>
+  ))
   .add('primary', () => (
     <Button className="primary" onClick={action('clicked')}>
       Add to Cart
@@ -24,6 +29,11 @@ storiesOf('Button', module)
   ))
   .add('primary with icon', () => (
     <Button className="primary" icon="shopping-cart" onClick={action('clicked')}>
+      Add to Cart
+    </Button>
+  ))
+  .add('primary disabled', () => (
+    <Button className="primary" icon="shopping-cart" onClick={action('clicked')} disabled>
       Add to Cart
     </Button>
   ))
@@ -37,6 +47,11 @@ storiesOf('Button', module)
       Add to Cart
     </Button>
   ))
+  .add('secondary disabled', () => (
+    <Button className="secondary" icon="shopping-cart" onClick={action('clicked')} disabled>
+      Add to Cart
+    </Button>
+  ))
   .add('tertiary', () => (
     <Button className="tertiary" onClick={action('clicked')}>
       Add to Cart
@@ -44,6 +59,11 @@ storiesOf('Button', module)
   ))
   .add('tertiary with icon', () => (
     <Button className="tertiary" icon="shopping-cart" onClick={action('clicked')}>
+      Add to Cart
+    </Button>
+  ))
+  .add('tertiary disabled', () => (
+    <Button className="tertiary" icon="shopping-cart" onClick={action('clicked')} disabled>
       Add to Cart
     </Button>
   ));
