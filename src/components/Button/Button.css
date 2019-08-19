@@ -1,8 +1,8 @@
 .button {
   align-items: center;
-  border: 1px solid #CCC;
+  border: 1px solid #ccc;
   border-radius: 25px;
-  box-shadow: 0px 0px 6px #CCC;
+  box-shadow: 0px 0px 6px #ccc;
   color: #333;
   cursor: pointer;
   display: flex;
@@ -17,12 +17,12 @@
 }
 
 .button:hover {
-  box-shadow: 0px 0px 15px #CCC;
+  box-shadow: 0px 0px 15px #ccc;
 }
 
 .button:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(0, 123, 255, .5);
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
 }
 
 .button:disabled,
@@ -43,7 +43,7 @@
   background: linear-gradient(to bottom, #ff8a6c 0%, #ff365f 100%);
   border: none;
   box-shadow: 0px 0px 6px #ff3d64;
-  color: #FFF;
+  color: #fff;
 }
 
 .button.primary:hover {
@@ -51,30 +51,49 @@
 }
 
 .button.secondary {
-  background: #5A8BFC;
-  background: -moz-linear-gradient(to top, #0DE3C5 0%, #1EBBDA 50%, #5A8BFC 100%);
-  background: -webkit-linear-gradient(to top, #0DE3C5 0%, #1EBBDA 50%, #5A8BFC 100%);
-  background: linear-gradient(to bottom, #0DE3C5 0%, #1EBBDA 50%, #5A8BFC 100%);
+  background: #5a8bfc;
+  background: -moz-linear-gradient(
+    to top,
+    #0de3c5 0%,
+    #1ebbda 50%,
+    #5a8bfc 100%
+  );
+  background: -webkit-linear-gradient(
+    to top,
+    #0de3c5 0%,
+    #1ebbda 50%,
+    #5a8bfc 100%
+  );
+  background: linear-gradient(to bottom, #0de3c5 0%, #1ebbda 50%, #5a8bfc 100%);
   border: none;
-  box-shadow: 0px 0px 6px #4CBBF7;
-  color: #FFF;
+  box-shadow: 0px 0px 6px #4cbbf7;
+  color: #fff;
 }
 
 .button.secondary:hover {
-  box-shadow: 0px 0px 15px #4CBBF7;
+  box-shadow: 0px 0px 15px #4cbbf7;
 }
 
 .button.tertiary {
-  background: #5A8BFC;
-  background: -moz-linear-gradient(to top, #AA4EC8 0%, #9D48B7 50%, #754CC5 100%);
-  background: -webkit-linear-gradient(to top, #AA4EC8 0%, #9D48B7 50%, #754CC5 100%);
-  background: linear-gradient(to bottom, #AA4EC8 0%, #9D48B7 50%, #754CC5 100%);
+  background: #5a8bfc;
+  background: -moz-linear-gradient(
+    to top,
+    #aa4ec8 0%,
+    #9d48b7 50%,
+    #754cc5 100%
+  );
+  background: -webkit-linear-gradient(
+    to top,
+    #aa4ec8 0%,
+    #9d48b7 50%,
+    #754cc5 100%
+  );
+  background: linear-gradient(to bottom, #aa4ec8 0%, #9d48b7 50%, #754cc5 100%);
   border: none;
-  box-shadow: 0px 0px 6px #9D48B7;
-  color: #FFF;
+  box-shadow: 0px 0px 6px #9d48b7;
+  color: #fff;
 }
 
 .button.tertiary:hover {
-  box-shadow: 0px 0px 15px #9D48B7;
+  box-shadow: 0px 0px 15px #9d48b7;
 }
-
