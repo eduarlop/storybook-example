@@ -1,6 +1,7 @@
 import { configure, addParameters } from "@storybook/react";
 import { themes } from "@storybook/theming";
 import "../src/App.css";
+import 'storybook-chroma';
 
 addParameters({
   options: {
